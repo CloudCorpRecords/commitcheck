@@ -1,0 +1,41 @@
+{
+  "bin": {
+    "commitcheck": "dist/cli.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1",
+    "zod": "^3"
+  },
+  "description": "Commit hygiene checker: over a git history range, checks subject length, the repo's own dominant message convention, DCO Signed-off-by trailers, and empty or placeholder messages, with per-commit evidence.",
+  "devDependencies": {
+    "@types/node": "^20",
+    "tsx": "^4",
+    "typescript": "^5"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "files": [
+    "dist",
+    "server.json"
+  ],
+  "homepage": "https://github.com/CloudCorpRecords/commitcheck#readme",
+  "license": "MIT",
+  "mcpName": "io.github.CloudCorpRecords/commitcheck",
+  "name": "@reneturcios/commitcheck",
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CloudCorpRecords/commitcheck.git"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/cli.ts",
+    "test": "tsx --test test/*.test.ts"
+  },
+  "type": "module",
+  "version": "0.1.0"
+}
